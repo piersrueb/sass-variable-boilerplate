@@ -1,4 +1,4 @@
-## SASS Variable and Mixins Boilerplate
+### SASS Variable and Mixins Boilerplate
 
 ```
 
