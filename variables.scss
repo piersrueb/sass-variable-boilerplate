@@ -1,0 +1,49 @@
+//  Variables & Mixins
+
+//  colours
+
+$black: #000;
+$white: #fff;
+$primary: #000;
+$secondary: #000;
+$tertiary: #000;
+
+//  typography
+
+$body-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$header-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$sub-header-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$suporting-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+@mixin fontstyle($family, $size, $height, $color, $align){
+    font-family: $family;
+    font-size: $size;
+    line-height: $size * $height;
+    color: $color;
+    text-align: $align;
+}
+
+//  body copy
+
+p{ @include fontstyle($body-font, 16px, 1.4, $black, left); }
+
+//  headings
+
+h1{ @include fontstyle($header-font, 64px, 1.4, $black, left); }
+h2{ @include fontstyle($header-font ,48px, 1.4, $black, left); }
+h3{ @include fontstyle($header-font, 34px, 1.4, $black, left); }
+h4{ @include fontstyle($header-font, 24px, 1.4, $black, left); }
+
+//  breakpoints
+
+$phone: 320px;
+$tablet: 480px;
+$desktop: 768px;
+$medium-desktop: 992px;
+$large-desktop: 1200px;
+
+@media (min-width: $phone){}
+@media (min-width: $tablet){}
+@media (min-width: $desktop){}
+@media (min-width: $medium-desktop){}
+@media (min-width: $large-desktop){}
