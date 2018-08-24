@@ -15,9 +15,10 @@ $header-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $sub-header-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $suporting-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
-@mixin fontstyle($family, $size, $height, $color, $align){
+@mixin fontstyle($family, $size, $weight, $height, $color, $align){
     font-family: $family;
     font-size: $size;
+    font-weight: $weight;
     line-height: $size * $height;
     color: $color;
     text-align: $align;
@@ -25,14 +26,14 @@ $suporting-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 //  body copy
 
-html, body{ @include fontstyle($body-font, 16px, 1.375, $black, left); }
+html, body{ @include fontstyle($body-font, 16px, normal, 1.375, $black, left); }
 
 //  headings
 
-h1{ @include fontstyle($header-font, 48px, 1.05, $black, left); }
-h2{ @include fontstyle($header-font ,36px, 1.25, $black, left); }
-h3{ @include fontstyle($header-font, 28px, 1.25, $black, left); }
-h4{ @include fontstyle($header-font, 18px, 1.22, $black, left); }
+h1{ @include fontstyle($header-font, 48px, bold, 1.05, $black, left); }
+h2{ @include fontstyle($header-font ,36px, bold, 1.25, $black, left); }
+h3{ @include fontstyle($header-font, 28px, bold, 1.25, $black, left); }
+h4{ @include fontstyle($header-font, 18px, bold, 1.22, $black, left); }
 
 //  breakpoints
 
