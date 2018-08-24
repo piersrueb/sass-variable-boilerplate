@@ -25,14 +25,14 @@ $suporting-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 //  body copy
 
-p{ @include fontstyle($body-font, 16px, 1.4, $black, left); }
+html, body{ @include fontstyle($body-font, 16px, 1.375, $black, left); }
 
 //  headings
 
-h1{ @include fontstyle($header-font, 64px, 1.4, $black, left); }
-h2{ @include fontstyle($header-font ,48px, 1.4, $black, left); }
-h3{ @include fontstyle($header-font, 34px, 1.4, $black, left); }
-h4{ @include fontstyle($header-font, 24px, 1.4, $black, left); }
+h1{ @include fontstyle($header-font, 48px, 1.05, $black, left); }
+h2{ @include fontstyle($header-font ,36px, 1.25, $black, left); }
+h3{ @include fontstyle($header-font, 28px, 1.25, $black, left); }
+h4{ @include fontstyle($header-font, 18px, 1.22, $black, left); }
 
 //  breakpoints
 
